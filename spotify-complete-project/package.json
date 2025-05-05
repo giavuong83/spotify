@@ -1,0 +1,14 @@
+{
+  "name": "spotify-fullstack",
+  "version": "1.0.0",
+  "description": "Spotify clone with Next.js frontend and Django backend",
+  "scripts": {
+    "install-all": "npm install && cd frontend && npm install && cd ../backend && pip install -r requirements.txt",
+    "dev": "concurrently \"cd frontend && npm run dev\" \"cd backend && python manage.py runserver\"",
+    "build": "cd frontend && npm run build",
+    "start": "concurrently \"cd frontend && npm start\" \"cd backend && python manage.py runserver\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+} 
